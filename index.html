@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js"></script>
+</head>
+
+<img src="img/titulo.png" title="" class="titulo"></img>
+
+<body>
+<section class="formulario" id="formulario">
+    <h1>Preencha os campos abaixo</h1>
+    
+    <div class="arrendondar">
+    <form >
+        <label for="nome">Nome do personagem:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="casa">Casa:</label>
+        <input type="text" id="casa" name="casa" required><br>
+
+
+        <div class="radio-group">
+            <label for="vivo">Está vivo?</label>
+            <input type="radio" id="status" name="vivo" value="sim" required>
+            <label for="status">Sim</label>
+            <input type="radio" id="status" name="vivo" value="nao" required>
+            <label for="status">Não</label><br>
+        </div><br>
+        
+         
+        <label for="classe">Classe:</label>
+        <select id="classe" name="classe" required> 
+            <option value="selecione">Selecione</option>
+            <option value="anao">Anão</option>
+            <option value="guerreiro">Guerreiro</option>
+            <option value="dragao">Dragão</option>
+            <option value="vivo">Vivo</option>
+            <option value="morto">Morto</option>
+            
+        </select><br>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br>
+        </div>
+
+        
+        <input class="btn" type="button" value="CONFIRMAR" onclick="confirmar()">
+        <input class="btn" type="button" value="CONVERTER P/ JSON" onclick="converter()">
+        <input class="btn" type="button" value="CONVERTER P/ OBJETO" onclick="converterDevolta()">
+        
+    </form>
+</section>
+</body>
+</html>
